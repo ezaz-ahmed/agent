@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { Box, Text, useApp } from 'ink';
 import type { ModelMessage } from 'ai';
 import { runAgent } from '../agent/run.ts';
@@ -117,7 +117,7 @@ export function App() {
         {streamingText && (
           <Box flexDirection='column' marginTop={1}>
             <Text color='green' bold>
-              › Assistant
+              U+003e Assistant
             </Text>
             <Box marginLeft={2}>
               <Text>{streamingText}</Text>
